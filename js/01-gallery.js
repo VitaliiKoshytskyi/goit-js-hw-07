@@ -1,10 +1,7 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-
-
 const commonDivEl = document.querySelector('.gallery')
-
 
 
 galleryItems.forEach(element => {
@@ -27,7 +24,8 @@ const gettingLargePictureHandler = (event) => {
     if (event.target.nodeName !== 'IMG') {
        return
     } 
-     const url = event.target.dataset.source
+  const url = event.target.dataset.source
+  
 
 const instance = basicLightbox.create(`<img src="${url}" width="800" height="600">`)
 
